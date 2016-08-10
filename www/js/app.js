@@ -48,6 +48,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+    .state('tab.bmi', {
+        url: '/bmi',
+        views: {
+          'tab-bmi': {
+            templateUrl: 'templates/calculator/calculator.html',
+            controller: 'Bmicontroller'
+          }
+        }
+      })
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/about');
 
